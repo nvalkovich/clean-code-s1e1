@@ -19,7 +19,8 @@
 
 @media (max-width:768px) {
 
-  .eisenhower-matrix { text-align: center;
+  .eisenhower-matrix { 
+    text-align: center;
   }
 
 }
@@ -28,7 +29,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.label-task, .input-task {
+.label-task, 
+.input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -40,10 +42,12 @@
   margin: 0;
   padding: 0px;
 }
-.task-list-item, .title {
+.task-list-item, 
+.title {
   list-style: none;
 }
-.input,.btn{
+.input,
+.btn{
   outline: none;
 }
 .btn {
