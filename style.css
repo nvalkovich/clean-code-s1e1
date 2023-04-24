@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.eisenhower-matrix .matrix-image {
+.eisenhower-matrix__image {
   width: 100%;
 }
-.eisenhower-matrix .details {
+.eisenhower-matrix__details {
   font-family: fantasy, cursive;
 }
 
@@ -29,8 +29,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.label-task, 
-.input-task {
+.label_task, 
+.input_task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -42,7 +42,7 @@
   margin: 0;
   padding: 0px;
 }
-.task-list-item, 
+.task-list__item, 
 .title {
   list-style: none;
 }
@@ -64,7 +64,7 @@
 }
 /* Heading */
 .title,
-.title-new-task {
+.title_new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -73,7 +73,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.input-task {
+.input_task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -85,12 +85,12 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.input-task:focus {
+.input_task:focus {
   color: #333;
 }
 
 /* New Task */
-.title-new-task {
+.title_new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -99,7 +99,7 @@
 }
 
 /* Task list */
-.task-list-item {
+.task-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,47 +108,47 @@
   justify-content: space-between;
   align-items: center;
 }
-.task-list-item > * {
+.task-list__item{
   vertical-align: middle;
 }
 
-.task-list-item > .input-checkbox {
+.input_checkbox {
   margin: 0 10px;
 }
-.task-list-item > .label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.task-list-item >    .input-task {
+.input-task {
   width: 226px;
 }
-.btn.btn-delete .remove-image{
+.btn__remove-icon{
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.btn-delete .remove-image:hover {
+.btn__remove-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list #completed-tasks .label {
+.task-list_completed .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list  .task-list-item .input-task {
+.task-list__item .input_task {
   display: none;
 }
 
-.task-list  .task-list-item.task-edit-mode .input-task {
+.task-list__item_edit-mode .input_task {
   display: inline-block;
   width: 224px;
 }
 
-.task-list  .task-list-item.task-edit-mode .label {
+.task-list__item_edit-mode .label {
   display: none;
 }
